@@ -12,7 +12,7 @@ class Processor:
     self.markerKeypoints, self.markerDescriptors = self.orb.detectAndCompute(img, None)
     print(f'Marker image loaded. Keypoints count: {len(self.markerKeypoints)}')
 
-  def getHomography(self, img):
+  def calcHomography(self, img):
 
     print("Calculating homography...")
 
